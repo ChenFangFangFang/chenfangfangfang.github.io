@@ -1,0 +1,85 @@
+body {
+  max-width: 1400px; /* 设置最大宽度，根据您的需要进行调整 */
+  margin: 0 auto; /* 让内容居中 */
+  
+}
+.button-link {
+
+  border: none; /* 移除按钮的边框 */
+  font-weight: bold; /* 加粗按钮文字 */
+  padding: 10px 20px; /* 调整按钮的内边距，使按钮更大 */
+  background-color: transparent; /* 移除按钮的背景颜色 */
+  cursor: pointer; /* 添加指针样式，表示可点击 */
+  transition: border-color 0.3s; /* 添加过渡效果，使下边框有动画效果 */  
+  text-decoration: none; /* 去除链接的下划线 */
+  font-size: 18px; /* 设置字体大小 */
+  color: #5C3D24; /* 设置文字颜色 */
+
+}
+
+  .box 
+  {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex; /* 容器设置，flex弹性，*/
+    justify-content: space-between; 
+    /* 在主轴上均匀分配，每个项目之间放置等量的空间，左右项目与弹性容器的边缘齐平。与最高的一样高*/
+    /* 无论页面怎么伸缩，始终均分*/
+    position: sticky;
+    top: 0px;
+    background-color: #E9D5B2;
+    border-bottom: 1px solid #f3eaea69; /* 添加下边框，1px宽，颜色为黑色 */
+  }
+
+  .box div {
+    text-align: center;
+    flex: 1; /* 使按钮平均分配容器的宽度 */
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center; /* 让内容在容器中居中 */
+}
+.image-container {
+  display: flex;
+  flex-direction: column; /* 改为垂直排列 */
+  align-items: center; /* 居中显示 */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+h1 {
+  color: #333;
+}
+@media screen and (max-width: 600px) {
+    /* 移动端样式 */
+    .banner {
+      display: none;
+    }
+    .box {
+      flex-direction: column; /* 垂直排列按钮 */
+      align-items: center; /* 居中按钮 */
+      position: static; /* 或者可以直接删除这一行 */
+      top: auto; /* 或者可以直接删除这一行 */
+    }
+  
+    .box div {
+      margin: 5px; /* 调整按钮之间的间距 */
+    }
+    body{
+      max-width: 400px;
+    }
+    img{
+      width: 350px;
+    }
+  }
+
+
+  
+  
+  
