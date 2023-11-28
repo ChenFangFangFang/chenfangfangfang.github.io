@@ -1,0 +1,128 @@
+body {
+  max-width: 1400px; 
+  margin: 0 auto; /* 让内容居中 */
+  
+}
+.banner{
+  width: 100%;
+  height: 200px; 
+}
+  .button-link {
+    border: none; /* 移除按钮的边框 */
+    font-weight: bold; /* 加粗按钮文字 */
+    padding: 10px 20px; /* 调整按钮的内边距，使按钮更大 */
+    background-color: transparent; 
+    cursor: pointer; /* 添加指针样式，表示可点击 */
+    text-decoration: none; 
+    font-size: 18px; 
+    color:  #5c3c06; 
+  }
+  .button-link2 {
+    border: none; /* 移除按钮的边框 */
+    font-weight: bold;
+    background-color: transparent; 
+    cursor: pointer; /* 添加指针样式，表示可点击 */
+    text-decoration: none; /* 去除链接的下划线 */
+    color: black; /* 设置文字颜色 */
+  }
+  .box 
+  {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex; /* 容器设置，flex弹性，*/
+    justify-content: space-between; 
+    /* 在主轴上均匀分配，每个项目之间放置等量的空间，左右项目与弹性容器的边缘齐平。与最高的一样高*/
+    /* 无论页面怎么伸缩，始终均分*/
+    position: sticky;
+    top: 0px;
+    background-color: #FFF9F5;;
+    border-bottom: 1px solid #C6B5A9; /* 添加下边框，1px宽，颜色为黑色 */
+  }
+
+  .box div {
+    text-align: center;
+    flex: 1; /* 使按钮平均分配容器的宽度 */
+  }
+  
+  p{
+    text-align: left;
+  }
+
+.grid-container {
+  display: grid;
+
+  background-color: white;
+  grid-template-columns: 1fr 2fr; /* 第一列占1/3，第二列占2/3 */
+}
+
+.grid-item1 img {
+  width: 100%;
+  height: auto;
+
+}
+/* .grid-item2 {
+
+  padding: 10px;
+}
+*/
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px ;
+}
+  
+.h3{
+  text-align: left;
+  margin-top: 0px; /* 上边距 */
+  margin-bottom: 0px; /* 下边距 */
+}
+
+@media only screen and (max-width: 700px) {
+    /* 移动端样式 */
+    .banner {
+      display: none;
+    }
+    .box {
+      flex-direction: column; /* 垂直排列按钮 */
+      align-items: center; /* 居中按钮 */
+      position: static; /* 或者可以直接删除这一行 */
+      top: auto; /* 或者可以直接删除这一行 */
+      border-bottom: none;
+    }
+  
+    .box div {
+      margin: 5px; /* 调整按钮之间的间距 */
+    }
+    body{
+      max-width: 400px;
+    }
+    .grid-container {
+      grid-template-columns: 1fr; /* 单列布局，每个元素占满宽度 */      
+    }
+    .grid-item1 {
+      text-align: left; /* 左对齐 */
+    }
+    .grid-item2 {
+      text-align: left; /* 左对齐 */
+    }
+
+    .grid-container > div {
+      margin-top: 0px; /* 上边距 */
+      margin-bottom: 0px; /* 下边距 */
+      padding: 0px ;
+      
+    }
+    .grid-container > div h3 {
+      margin-top: 0px; /* 上边距 */
+      margin-bottom: 0px; /* 下边距 */
+    }
+    .paragraph{
+      display: none; /* 不显示p段落 */
+    }
+  }
+
+
+  
+  
+  
