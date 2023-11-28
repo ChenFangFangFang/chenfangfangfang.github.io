@@ -78,7 +78,7 @@ body {
   margin-bottom: 0px; /* 下边距 */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1400px) {
     /* 移动端样式 */
     .banner {
       display: none;
